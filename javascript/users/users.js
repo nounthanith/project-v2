@@ -13,7 +13,7 @@ async function fetchUsers() {
     const response = await fetch(urlUsers + "?action=read");
     const result = await response.json();
     const users = result.data;
-    console.log(users);
+    // console.log(users);
     userData.innerHTML = "";
 
     for (let i = 0; i < users.length; i++) {

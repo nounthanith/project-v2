@@ -1,14 +1,53 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-</head>
-<body>
-    <h1>Product Page</h1>
-    <p>This is a simple product page.</p>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/navbar.css" />
+    <link rel="stylesheet" href="style/product.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-custom py-3">
+      <div class="container">
+        <a class="navbar-brand" href="product.html">MyBrand</a>
+        <button
+          class="navbar-toggler text-white border-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarContent"
+        >
+          <ul id="navbar" class="navbar-nav ms-auto d-flex gap-3 text-center">
+            <!-- Items will be injected here -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <main style="margin-top: 100px" class="container">
+      <div class="container py-4">
+        <div class="row">
+          <!-- Product 1 -->
+          <div class="container py-4">
+    <div class="row" id="products-container">
+        <!-- Products will be inserted here dynamically -->
+    </div>
+</div>
+        </div>
+      </div>
+    </main>
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="javascript/navbar/navbar.js"></script>
+    <script src="javascript/products/getProducts.js"></script>
+  </body>
 </html>

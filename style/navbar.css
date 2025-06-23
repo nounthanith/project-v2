@@ -1,5 +1,9 @@
 .navbar-custom {
   background: #457b9d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .nav-link {
   color: white !important;

@@ -18,7 +18,7 @@ document
       for (let i = 0; i < data.data.length; i++) {
         const userEmail = data.data[i][3];
         const userPassword = data.data[i][4].toString();
-        console.log(userEmail, userPassword);
+        // console.log(userEmail, userPassword);
         if (email === userEmail && password === userPassword) {
           found = true;
 
