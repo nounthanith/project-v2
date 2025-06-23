@@ -1,8 +1,6 @@
 const urlUsers =
   "https://script.google.com/macros/s/AKfycbwUEl3DI0SczSF3YONRhF6ujWJPrk8kwGGphZ8ZrcUZtaCkiFLErhR1b8CmDMW2orZBZA/exec";
-
 const userData = document.getElementById("userData");
-
 async function fetchUsers() {
   const role = localStorage.getItem("userRole");
   if (role == "user") {
@@ -10,12 +8,12 @@ async function fetchUsers() {
       '<td class="text-danger text-center" colspan="7">No Permission!!!</td>';
     return;
   }
+
   try {
     const response = await fetch(urlUsers + "?action=read");
     const result = await response.json();
     const users = result.data;
     console.log(users);
-    // Clear existing rows
     userData.innerHTML = "";
 
     for (let i = 0; i < users.length; i++) {
@@ -23,27 +21,27 @@ async function fetchUsers() {
       const row = document.createElement("tr");
 
       row.innerHTML = `
-    <th scope="row">${i + 1}</th>
-    <td class="text-truncate truncate-2-lines" style="max-width: 200px;">${
-      user[1]
-    }</td>
-    <td class="text-danger"><a href="tel:${user[2]}">${user[2]}</a></td>
-    <td class="text-capitalize fw-semibold" style="color: ${
-      user[5] === "admin" ? "red" : "green"
-    }">${user[5]}</td>
-    <td class="text-primary"><a href="mailto:${user[3]}">${user[3]}</a></td>
-    <td class="text-truncate truncate-2-lines" style="max-width: 200px;">${
-      new Date(user[6]).toISOString().split("T")[0]
-    }</td>
-    <td class="d-flex gap-1">
-      <button onclick="deleteUser(${
-        user[0]
-      })" class="btn btn-sm btn-danger">Delete</button>
-      <button onclick="showUserById(${
-        user[0]
-      })" type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editUser">Edit</button>
-    </td>
-  `;
+        <th scope="row">${i + 1}</th>
+        <td class="text-truncate truncate-2-lines" style="max-width: 200px;">${
+          user[1]
+        }</td>
+        <td class="text-danger"><a href="tel:${user[2]}">${user[2]}</a></td>
+        <td class="text-capitalize fw-semibold" style="color: ${
+          user[5] === "admin" ? "red" : "green"
+        }">${user[5]}</td>
+        <td class="text-primary"><a href="mailto:${user[3]}">${user[3]}</a></td>
+        <td class="text-truncate truncate-2-lines" style="max-width: 200px;">${
+          new Date(user[6]).toISOString().split("T")[0]
+        }</td>
+        <td class="d-flex gap-1">
+          <button onclick="deleteUser(${
+            user[0]
+          })" class="btn btn-sm btn-danger">Delete</button>
+          <button onclick="showUserById(${
+            user[0]
+          })" type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editUser">Edit</button>
+        </td>
+      `;
 
       userData.appendChild(row);
     }
@@ -51,9 +49,7 @@ async function fetchUsers() {
     console.error("Failed to fetch users:", error);
   }
 }
-
 fetchUsers();
-
 //Delete User
 function deleteUser(id) {
   var params = {
@@ -74,7 +70,6 @@ function deleteUser(id) {
       fetchUsers();
     });
 }
-
 //Add User
 document
   .getElementById("userForm")
@@ -137,7 +132,7 @@ document
       });
   });
 
-//show dialog
+//Put Data in to update Dialog
 const showUserById = (id) => {
   fetch(urlUsers + "?action=read")
     .then((res) => res.json())
@@ -164,7 +159,7 @@ const showUserById = (id) => {
   localStorage.setItem("id", id);
   // localStorage.setItem("password", password)
 };
-
+//Edit Function
 function updateUser() {
   const id = localStorage.getItem("id");
   const password = document.getElementById("editPassword").value;

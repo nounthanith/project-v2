@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style/navbar.css" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <!-- Icon -->
     <link
@@ -17,37 +18,32 @@
   </head>
   <body style="background-color: #dee2e6">
     <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg bg-light border-top border-bottom border-dark border-1 px-0 px-lg-5"
-      style="background-color: #f1f7ed"
-    >
-      <div
-        class="container-fluid d-flex justify-content-between align-items-center"
-      >
-        <a class="navbar-brand fw-bold fs-3 me-5" href="product.html">G-4</a>
+    <nav class="navbar navbar-expand-md navbar-custom py-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">MyBrand</a>
         <button
-          class="navbar-toggler border-0"
+          class="navbar-toggler text-white border-white"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-target="#navbarContent"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
-      <!-- Navbar Item -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul
-          class="navbar-nav d-flex flex-row gap-4 fw-bold fs-5"
-          id="navbar"
-        ></ul>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarContent"
+        >
+          <ul id="navbar" class="navbar-nav ms-auto d-flex gap-3 text-center">
+            <!-- Items will be injected here -->
+          </ul>
+        </div>
       </div>
     </nav>
     <!-- Main Content -->
     <div class="container">
-      <h1 class="text-center text-decoration-underline mt-3 mb-4">User</h1>
+      <h1 class="text-center text-decoration-underline mt-3 mb-4">User List</h1>
+      
     </div>
     <!-- Add User Dialog -->
     <div class="container">
@@ -245,7 +241,14 @@
           </thead>
           <tbody id="userData">
             <tr class="">
-              <td colspan="7" class="text-center py-3">Loading user data...</td>
+              <td colspan="7" class="text-center py-3">
+                <div class="text-center">
+                  <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+                <p>Loading...🙏❤️</p>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -255,5 +258,6 @@
     <script src="javascript/navbar/navbar.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="javascript/users/users.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </body>
 </html>
