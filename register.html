@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+   <!-- Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+      .form-container {
+        width: 100%;
+        max-width: 450px;
+      }
+    </style>
+  </head>
+  <body style="background-color: #e9ecef;">
+    <div
+      class="container min-vh-100 d-flex justify-content-center align-items-center"
+    >
+      <form
+        id="userForm"
+        class="form-container bg-white p-4 rounded shadow-sm border border-2"
+      >
+        <h4 class="text-center mb-4">Register</h4>
+
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Name"
+            required
+          />
+        </div>
+       
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="phone"
+            placeholder="Phone Number"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Email Address"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <input type="hidden" id="role" value="user" />
+        </div>
+
+        <button type="submit" class="btn btn-success w-100">Register</button>
+
+        <p class="mt-3 text-center mb-0">
+          Already have an account?
+          <a href="index.html">Login here</a>
+        </p>
+
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="javascript/auth/register.js"></script>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <!-- Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+      .form-container {
+        width: 100%;
+        max-width: 400px;
+      }
+    </style>
+  </head>
+  <body style="background-color: #e9ecef;" class="">
+    <div
+      class="container min-vh-100 d-flex justify-content-center align-items-center"
+    >
+      <form
+        id="loginForm"
+        class="form-container bg-white border border-2 p-4 rounded shadow-sm"
+      >
+        <h4 class="mb-3 text-center">Login</h4>
+        <div class="mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="loginEmail"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="password"
+            class="form-control"
+            id="loginPassword"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary w-100 mb-2">Login</button>
+        <p class="text-center mb-0">
+          Don't have an account?
+          <a href="register.html">Register here</a>
+        </p>
+        <div id="loginMessage" class="mt-2 text-danger text-center"></div>
+      </form>
+      <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="javascript/auth/login.js"></script>
+    </div>
+  </body>
+</html>
