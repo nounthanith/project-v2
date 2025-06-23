@@ -5,7 +5,7 @@ const role = localStorage.getItem("userRole")
 
 // console.log(role) 
 if(role === "user"){
-  window.location.href = "product.html"
+  window.location.href = "page404.html"
 }
 productForm.addEventListener("submit", function(event) {
   event.preventDefault();
