@@ -1,14 +1,14 @@
 .simple-header-slider {
     margin-top: 80px;
   width: 100%;
-  height: 600px; /* Adjust height as needed */
+  height: 600px;
   overflow: hidden;
   position: relative;
 }
 
 @media (max-width: 768px) {
   .simple-header-slider {
-    height: 200px; /* Mobile height */
+    height: 200px; 
   }
 }
 
