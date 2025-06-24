@@ -23,20 +23,26 @@
       <div class="container">
         <a class="navbar-brand" href="product.html">MyBrand</a>
         <button
-        
           class="navbar-toggler text-white border-white"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarContent"
         >
-          <span style="color: white !important;" class="navbar-toggler-icon text-white"></span>
+          <span
+            style="color: white !important"
+            class="navbar-toggler-icon text-white"
+          ></span>
         </button>
 
         <div
           class="collapse navbar-collapse justify-content-between"
           id="navbarContent"
         >
-          <ul style="color: black !important;" id="navbar" class="navbar-nav ms-auto d-flex gap-3 text-center">
+          <ul
+            style="color: black !important"
+            id="navbar"
+            class="navbar-nav ms-auto d-flex gap-3 text-center"
+          >
             <!-- Items will be injected here -->
           </ul>
         </div>
@@ -44,7 +50,7 @@
     </nav>
     <!-- Main User -->
     <div>
-      <div style="margin-top: 150px;" class="container">
+      <div style="margin-top: 150px" class="container">
         <h1 class="text-center text-decoration-underline mt-3 mb-4">
           User List
         </h1>
@@ -400,6 +406,39 @@
         </div>
       </div>
       <!-- Product Table -->
+      <div class="cotainer">
+        <div class="container mt-3">
+          <div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#ID</th>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Stock</th>
+        <th>Rating</th>
+        <th>Created</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="productTable">
+      <tr class="align-middle">
+        <td colspan="9" class="text-center py-3">
+          <div class="text-center">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+          <p>Loading...🙏❤️</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+        </div>
+      </div>
     </div>
 
     <script src="javascript/navbar/navbar.js"></script>
@@ -407,5 +446,6 @@
     <script src="javascript/users/users.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="javascript/products/createProduct.js"></script>
+    <script src="javascript/products/getAdminProduct.js"></script>
   </body>
 </html>

@@ -54,8 +54,7 @@ productForm.addEventListener("submit", function(event) {
           showConfirmButton: false,
           timer: 2000,
         });
-        // You might want to add a function to refresh product list here
-        // fetchProducts();
+          // fetchProducts();
       } else {
         Swal.fire({
           position: "top-center",
