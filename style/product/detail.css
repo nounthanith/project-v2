@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #edf2f4 !important;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container-detail {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.product-detail {
+    border: solid 1.4px black;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 4px 4px black;
+  overflow: hidden;
+}
+
+.product-image {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: #f9f9f9; */
+}
+
+.product-image img {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.product-info {
+  flex: 1;
+  min-width: 300px;
+  padding: 30px;
+}
+
+.product-category {
+  color: #666;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.product-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e63946;
+  margin-bottom: 20px;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.stars {
+  color: #ffc107;
+  margin-right: 10px;
+}
+
+.product-description {
+  margin-bottom: 30px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease !important;
+}
+
+.btn-primary {
+  background-color: #ffb703 !important;
+  color: #000 !important;
+}
+
+.btn-secondary {
+  background-color: #9d0208 !important;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .product-detail {
+    flex-direction: column;
+  }
+
+  .product-image,
+  .product-info {
+    width: 100%;
+  }
+}

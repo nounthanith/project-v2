@@ -59,7 +59,7 @@ function renderProducts(products) {
     ] = product;
 
     const productCard = `
-      <div class="col-md-6 col-lg-3 mb-4">
+      <div onclick="showProductById(${id})" class="col-md-6 col-lg-3 mb-4">
         <div class="product-card h-100 d-flex flex-column">
           <div class="product-image-container">
             <img src="${imageUrl}" 

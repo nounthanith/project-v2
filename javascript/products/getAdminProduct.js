@@ -32,7 +32,7 @@ async function fetchProduct() {
           <td  class="fw-bold text-uppercase text-truncate truncate-2-lines" style="max-width: 200px;">${name}</td>
           <td><span style="background-color: #fec5bb; padding:2px 15px;" class="text-danger rounded-pill">$${Number(price).toFixed(2)}</span></td>
           <td class="text-danger"><span style="background-color: #fff6cc; padding:2px 15px;" class="rounded-pill">${category}</span></td>
-          <td class="fw-bold" style="color: #8338ec;">${stockQty}</td>
+          <td style="color: blue;"><span style="background-color: #a2d2ff; padding:2px 15px;" class="rounded-pill">${stockQty}</span></td>
           <td class="text-dark"><span style="background-color: #d8f3dc; padding:2px 15px;" class="rounded-pill">${rating}⭐</span></td>
           <td>${new Date(createdAt).toLocaleDateString()}</td>
           <td style="white-space: nowrap; flex-wrap: nowrap;" class="">
