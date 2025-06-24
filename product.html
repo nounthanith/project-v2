@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,8 +7,9 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style/navbar.css" />
     <link rel="stylesheet" href="style/product.css" />
+    <link rel="stylesheet" href="style/loopimage.css" />
   </head>
-  <body>
+  <body style="background-color: #edf2f4">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-custom py-3">
       <div class="container">
@@ -25,7 +27,11 @@
           class="collapse navbar-collapse justify-content-between"
           id="navbarContent"
         >
-          <ul id="navbar" class="navbar-nav ms-auto d-flex gap-3 text-center">
+          <ul
+            style="color: black !important"
+            id="navbar"
+            class="navbar-nav ms-auto d-flex gap-3 text-center"
+          >
             <!-- Items will be injected here -->
           </ul>
         </div>
@@ -33,25 +39,42 @@
     </nav>
 
     <!-- Main -->
-    <main style="margin-top: 100px" class="container">
-      <div class="container py-4">
-        <div class="row">
-          <div class="container py-4">
-            <div class="row" id="products-container">
-              <!-- Item -->
-              <div class="text-center">
-                <div class="spinner-border" role="status">
-                  <span class="visually-hidden">Loading...</span>
+    <!-- Loop image -->
+    <div>
+      <div class="simple-header-slider">
+        <div class="slider-images">
+          <!-- Images will be inserted here by JavaScript -->
+        </div>
+      </div>
+
+      <main style="" class="container">
+        <!-- filter button -->
+        <div
+          id="category-buttons-container"
+          class="my-4 d-flex flex-wrap gap-4"
+        ></div>
+
+        <!-- product data  -->
+        <div class="container">
+          <div class="row">
+            <div class="container">
+              <div class="row" id="products-container">
+                <!-- Item -->
+                <div class="text-center">
+                  <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="javascript/navbar/navbar.js"></script>
     <script src="javascript/products/getProducts.js"></script>
+    <script src="javascript/navbar/loopImage.js"></script>
   </body>
 </html>

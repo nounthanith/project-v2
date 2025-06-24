@@ -1,9 +1,10 @@
 .navbar-custom {
-  background: #457b9d;
-  position: fixed;
+  background: #001524;
+  position: fixed !important;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
 }
 .nav-link {
   color: white !important;
@@ -15,5 +16,9 @@
 .navbar-brand {
   color: white !important;
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 1.6rem !important;
+}
+
+.nav-link:active{
+  text-decoration: underline;
 }

@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>404 Not Found</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/page404.css">
-</head>
-<body>
-    <div class="error-container">
-        <div class="emoji">😕</div>
-        <div class="error-code">404</div>
-        <h1>Oops! You don't have permission to assign this!!!</h1>
-        <p>This page is only admin.🙏</p>
-        
-        
-        <div class="action-buttons">
-            <a href="product.html" class="btn">Go to Homepage</a>
-            <!-- <a href="/" class="btn btn-secondary">Contact Support</a> -->
-        </div>
-    </div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/page404.css" />
+  </head>
+  <body>
+    <div class="permission-denied-container">
+      <div class="permission-header">
+        <div class="lock-icon">🔒</div>
+        <h1>Access Restricted</h1>
+      </div>
 
-    <script>
-        const emojis = ['😕', '😞', '🤔', '👀', '🔍', '🚧', '❌'];
-        document.querySelector('.emoji').textContent = emojis[Math.floor(Math.random() * emojis.length)];
-    </script>
-</body>
+      <div class="permission-content">
+        <div class="error-code">403🫵</div>
+        <p class="message">
+          You don't have permissions to access this.
+        </p>
+        <p class="detail">
+          This page is only admin role.
+        </p>
+      </div>
+
+      <div class="permission-actions">
+        <a href="product.html" class="btn btn-primary">
+          <i class="fas fa-home"></i>Home
+        </a>
+      </div>
+
+      <div class="permission-footer">
+        <p>System Security • Group-3</p>
+      </div>
+    </div>
+  </body>
 </html>

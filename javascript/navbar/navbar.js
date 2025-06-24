@@ -26,7 +26,7 @@ if (navbar) {
         const navLink = document.createElement("a");
         navLink.className = "nav-link";
         navLink.href = item.href;
-        navLink.innerHTML = `<i class="${item.icon} me-1"></i> ${item.name}`;
+        navLink.innerHTML = `<i class=" ${item.icon} me-1"></i> ${item.name}`;
 
         navItem.appendChild(navLink);
         navbar.appendChild(navItem);
