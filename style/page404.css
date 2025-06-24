@@ -32,6 +32,12 @@
     margin: 20px 0;
 }
 
+@media (max-width: 768px) {
+  .error-code {
+    font-size: 22px;
+  }
+}
+
 .message {
     font-size: 18px;
     color: #555;
