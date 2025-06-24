@@ -46,7 +46,7 @@
   border-radius: 5px;
 }
 .category-btn {
-  padding: 6px 12px;
+  padding: 16px 12px;
   border: solid 2px black;
   border-radius: 0px;
   background-color: #d4a373;
@@ -54,6 +54,12 @@
   cursor: pointer;
   transition: all 0.2s ease;
   box-shadow: 3px 3px black;
+}
+
+@media (max-width: 768px) {
+  .category-btn{
+    padding: 5px 12px;
+  }
 }
 
 .category-btn:hover {

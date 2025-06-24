@@ -70,8 +70,9 @@ function renderProducts(products) {
           <div class="product-date">${formatDate(createdAt)}</div>
           <h3 class="product-title">${name}</h3>
           <div class="product-price mb-2">$${parseFloat(price).toFixed(2)}</div>
-          <div class="product-rating mb-2">
-            ${"★".repeat(Math.floor(rating))}${"☆".repeat(5 - Math.floor(rating))} (${rating})
+          <div class="product-rating mb-2 text-warning d-flex justify-content-between">
+            <div style="font-size:19px">${"★".repeat(Math.floor(rating))}${"☆".repeat(5 - Math.floor(rating))}</div>
+            <p style="background-color:hotpink;padding:0px 15px;" class="text-dark rounded-pill">${rating}</p>
           </div>
         </div>
       </div>
@@ -79,6 +80,7 @@ function renderProducts(products) {
 
     container.insertAdjacentHTML("beforeend", productCard);
   });
+  
 }
 
 function createCategoryButtons(products) {

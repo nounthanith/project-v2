@@ -1,0 +1,18 @@
+footer a {
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline !important;
+  opacity: 0.9;
+}
+
+#techDetailsBtn {
+  transition: all 0.3s ease;
+}
+
+#techDetailsBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,180,216,0.2);
+}
