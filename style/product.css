@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.pixel-font{
+  font-family: 'Press Start 2P', cursive;
+}
 .product-card {
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
+  border: 1.5px solid black !important;
+  border-radius: 0px !important;
   padding: 15px;
   margin-bottom: 20px;
   transition: transform 0.3s ease;
-  background-color: #f8f9fa;
+  background-color: #ffff;
+  box-shadow: 4px 4px black;
 }
 .product-card:hover {
   transform: translateY(-5px);
@@ -25,6 +31,7 @@
   font-weight: bold;
   color: #d32f2f;
   font-size: 1.1rem;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .product-image-container {
@@ -54,6 +61,7 @@
   cursor: pointer;
   transition: all 0.2s ease;
   box-shadow: 3px 3px black;
+  font-family: 'Press Start 2P', cursive;
 }
 
 @media (max-width: 768px) {
