@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/product/detail.css" />
     <link rel="stylesheet" href="style/navbar.css" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/footer/footer.css">
   </head>
   <body>
     <!-- Navbar -->
@@ -87,8 +88,83 @@
       </div>
     </div>
 
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <h5 class="mb-3" style="color: #00b4d8">Technologies Used</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <span class="me-2">🏗️</span> Framework:
+                <a
+                  href="https://getbootstrap.com/"
+                  target="_blank"
+                  class="text-decoration-none"
+                  style="color: #6f42c1"
+                >
+                  Bootstrap
+                </a>
+              </li>
+              <li class="mb-2">
+                <span class="me-2">💬</span> Alert System:
+                <a
+                  href="https://sweetalert2.github.io/"
+                  target="_blank"
+                  class="text-decoration-none"
+                  style="color: #f8bb86"
+                >
+                  SweetAlert2
+                </a>
+              </li>
+              <li class="mb-2">
+                <span class="me-2">🎨</span> Color Palette:
+                <a
+                  href="https://coolors.co/"
+                  target="_blank"
+                  class="text-decoration-none"
+                  style="color: #48cae4"
+                >
+                  Coolors.co
+                </a>
+              </li>
+              <li>
+                <span class="me-2">🖼️</span> Images Courtesy:
+                <a
+                  href="https://aula.com/"
+                  target="_blank"
+                  class="text-decoration-none"
+                  style="color: #38a3a5"
+                  >Aula</a
+                >,
+                <a
+                  href="https://www.popmart.com/"
+                  target="_blank"
+                  class="text-decoration-none"
+                  style="color: #f72585"
+                  >Pop Mart</a
+                >
+              </li>
+            </ul>
+            <p class="small text- mb-1">© 2025 Group-3.</p>
+          </div>
+
+          <div class="col-md-6 text-md-end">
+            <button
+              id="techDetailsBtn"
+              class="btn btn-sm btn-outline-light mb-3"
+            >
+              <i class="fas fa-info-circle me-1"></i> Show Technical Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="javascript/products/productDetail.js"></script>
     <script src="javascript/navbar/navbar.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="javascript/navbar/footer.js"></script>
   </body>
 </html>
