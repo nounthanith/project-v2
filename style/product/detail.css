@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #edf2f4 !important;
+  background-color: #e9edc9 !important;
   color: #333;
   line-height: 1.6;
 }
@@ -23,8 +23,8 @@ body {
     border: solid 1.4px black;
   display: flex;
   flex-wrap: wrap;
-  background: #fff;
-  border-radius: 10px;
+  background: #fefae0;
+  /* border-radius: 10px; */
   box-shadow: 4px 4px black;
   overflow: hidden;
 }
@@ -79,8 +79,10 @@ body {
 }
 
 .stars {
-  color: #ffc107;
+  color: #fb8500;
   margin-right: 10px;
+  font-size: 30px;
+  
 }
 
 .product-description {

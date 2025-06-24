@@ -1,4 +1,4 @@
-const showProductById = (id) => {
+const showProductDetail = (id) => {
   fetch(productUrl + "?action=read")
     .then((res) => res.json())
     .then((data) => {

@@ -59,7 +59,7 @@ function renderProducts(products) {
     ] = product;
 
     const productCard = `
-      <div onclick="showProductById(${id})" class="col-md-6 col-lg-3 mb-4">
+      <div onclick="showProductDetail(${id})" class="col-md-6 col-lg-3 mb-4">
         <div class="product-card h-100 d-flex flex-column">
           <div class="product-image-container">
             <img src="${imageUrl}" 
@@ -71,7 +71,7 @@ function renderProducts(products) {
           <h3 class="product-title">${name}</h3>
           <div class="product-price mb-2">$${parseFloat(price).toFixed(2)}</div>
           <div class="product-rating mb-2 d-flex justify-content-between align-items-center">
-            <div style="font-size:19px;color:#fcbf49;">${"★".repeat(Math.floor(rating))}${"☆".repeat(5 - Math.floor(rating))}</div>
+            <div style="font-size:19px;color:#fb8500;">${"★".repeat(Math.floor(rating))}${"☆".repeat(5 - Math.floor(rating))}</div>
             <p style="background-color:#fcbf49;padding:0px 15px;border: solid 1px black !important; box-shadow: 2px 2px black;font-family: 'Press Start 2P', cursive;" class="text-dark">${rating}</p>
           </div>
         </div>

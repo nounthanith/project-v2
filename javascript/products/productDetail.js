@@ -30,4 +30,4 @@ const productDetailName = localStorage.getItem("productName");
             }
         }
         
-        starsContainer.innerHTML += ` ${rating.toFixed(1)}`;
+        starsContainer.innerHTML += `<span >       ${rating.toFixed(1)}</span>`;
