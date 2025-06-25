@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/product/detail.css" />
     <link rel="stylesheet" href="style/navbar.css" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="style/footer/footer.css">
+    <link rel="stylesheet" href="style/footer/footer.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -64,15 +64,21 @@
           <p class="product-description" id="detailDescription"></p>
           <div class="action-buttons">
             <button
+              onclick="addToCart()"
+              id="addToCartBtn"
               style="
                 padding: 5px 18px !important;
                 border: 1.5px black solid;
                 box-shadow: 3px 3px black;
               "
-              class="btn btn-primary"
+              class="btn btn-secondary"
             >
-              Add to Cart
+              <i class="fas fa-cart-plus"></i> Add to Cart
             </button>
+            <span id="cartCount" class="cart-count" style="display: none"
+              >0</span
+            >
+
             <button
               style="
                 padding: 5px 18px !important;
@@ -166,5 +172,6 @@
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="javascript/navbar/footer.js"></script>
+    <script src="javascript/cart/cart.js"></script>
   </body>
 </html>

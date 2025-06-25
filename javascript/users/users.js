@@ -4,7 +4,7 @@ const userData = document.getElementById("userData");
 async function fetchUsers() {
   const role = localStorage.getItem("userRole");
   if (role == "user") {
-    window.location.href = "product.html";
+    window.location.href = "page404.html";
     return;
   }
 

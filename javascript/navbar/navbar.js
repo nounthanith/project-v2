@@ -5,6 +5,10 @@ const navItems = [
         // icon: "fa-solid fa-house",
     },
     {
+        name: "Cart",
+        href: "cart.html"
+    },
+    {
         name: "Admin",
         href: "adminDashboard.html",
         // icon: "fa-solid fa-user-shield",
@@ -13,7 +17,8 @@ const navItems = [
         name: "Login",
         href: "index.html",
         // icon: "fa-solid fa-right-to-bracket",
-    }
+    },
+    
 ];
 
 const navbar = document.getElementById("navbar");

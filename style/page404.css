@@ -1,35 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 .permission-denied-container {
-    max-width: 600px;
-    margin: 150px auto;
-    padding: 30px;
-    text-align: center;
-    background: #edf2f4;
-    box-shadow: 3px 3px black;
-    border: solid 2px black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 600px;
+  margin: 150px auto;
+  padding: 30px;
+  text-align: center;
+  background: #edf2f4;
+  box-shadow: 3px 3px black;
+  border: solid 2px black;
+  font-family: "Press Start 2P", cursive;
 }
 
 .permission-header {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .lock-icon {
-    font-size: 60px;
-    color: #d32f2f;
-    margin-bottom: 15px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 60px;
+  color: #d32f2f;
+  margin-bottom: 15px;
 }
 
 .permission-header h1 {
-    color: #333;
-    margin: 0;
-    font-size: 28px;
+  color: #333;
+  margin: 0;
+  font-size: 28px;
+  /* font-family: none !important; */
 }
 
 .error-code {
-    font-size: 72px;
-    font-weight: bold;
-    color: #d32f2f;
-    margin: 20px 0;
+  font-size: 32px;
+  font-weight: bold;
+  color: #d32f2f;
+  margin: 20px 0;
+  font-family: "Press Start 2P", cursive;
 }
 
 @media (max-width: 768px) {
@@ -39,59 +44,59 @@
 }
 
 .message {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 15px;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 15px;
 }
 
 .detail {
-    color: #777;
-    line-height: 1.6;
-    margin-bottom: 30px;
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 30px;
 }
 
 .permission-actions {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
 .btn {
-    padding: 12px 24px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 500;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    transition: all 0.3s ease;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
 }
 
 .btn-primary {
-    background-color: #1976d2;
-    color: white;
-    border: 1px solid #1976d2;
+  background-color: #1976d2;
+  color: white;
+  border: 1px solid #1976d2;
 }
 
 .btn-primary:hover {
-    background-color: #1565c0;
+  background-color: #1565c0;
 }
 
 .btn-secondary {
-    background-color: transparent;
-    color: #1976d2;
-    border: 1px solid #1976d2;
+  background-color: transparent;
+  color: #1976d2;
+  border: 1px solid #1976d2;
 }
 
 .btn-secondary:hover {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 .permission-footer {
-    font-size: 12px;
-    color: #999;
-    border-top: 1px solid #eee;
-    padding-top: 15px;
-    margin-top: 15px;
+  font-size: 12px;
+  color: #999;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 15px;
 }
