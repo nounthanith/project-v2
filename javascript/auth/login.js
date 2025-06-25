@@ -30,14 +30,12 @@ document
             timer: 2000,
           });
 
-          // Optional: Store user data
           localStorage.setItem("userId", data.data[i][0]);
           localStorage.setItem("userName", data.data[i][1]);
           localStorage.setItem("userRole", data.data[i][5]);
           localStorage.setItem("userCreatedAt", data.data[i][6]);
           localStorage.setItem("userEmail", userEmail);
           localStorage.setItem("userPhone", data.data[i][2]);
-
          
           if( data.data[i][5] === "admin") {
             setTimeout(() => {

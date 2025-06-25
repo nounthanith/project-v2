@@ -405,6 +405,124 @@
           </div>
         </div>
       </div>
+      <!-- Edit Product Dialog -->
+       <div class="container">
+        <!-- dialog -->
+        <div
+          class="modal fade"
+          id="productEditDialog"
+          tabindex="-1"
+          aria-labelledby="productDialogLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="productDialogLabel">Edit Product</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form id="productEditForm">
+                  <div class="mb-3">
+                    <label for="productName" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="EditName"
+                      name="productName"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="image_url" class="form-label">Image URL</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="EditImage_url"
+                      name="image_url"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="price" class="form-label">Price</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="EditPrice"
+                      name="price"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="category" class="form-label">Category</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="EditCategory"
+                      name="category"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="description" class="form-label"
+                      >Description</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="EditDescription"
+                      name="description"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="stock_Qty" class="form-label">Stock Qty</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="EditStock_Qty"
+                      name="stock_Qty"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="rating" class="form-label">Rating</label>
+                    <input
+                      type="number"
+                      step="0.1"
+                      class="form-control"
+                      id="EditRating"
+                      name="rating"
+                      required
+                    />
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cancel
+                </button>
+                <button
+                  onclick="EditProduct()"
+                  type="submit"
+                  form="productForm"
+                  class="btn btn-primary"
+                >
+                  Edit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Product Table -->
       <div class="cotainer">
         <div class="container mt-3">

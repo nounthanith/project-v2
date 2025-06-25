@@ -49,7 +49,7 @@ document
             showConfirmButton: false,
             timer: 2000,
           });
-          // Redirect to login page after 2 seconds
+          // Redirect to login page after 3.5 seconds
           setTimeout(() => {
             location.href = "index.html";
           }, 3500);

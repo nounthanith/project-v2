@@ -4,8 +4,7 @@ const userData = document.getElementById("userData");
 async function fetchUsers() {
   const role = localStorage.getItem("userRole");
   if (role == "user") {
-    userData.innerHTML =
-      '<td class="text-danger text-center" colspan="7">No Permission!!!</td>';
+    window.location.href = "product.html";
     return;
   }
 
@@ -112,7 +111,7 @@ document
       .then((data) => {
         if (data.status === "success") {
           Swal.fire({
-            position: "top-center",
+            position: "top-right",
             icon: "success",
             title: "Create User successfully",
             showConfirmButton: false,
@@ -146,7 +145,6 @@ const showUserById = (id) => {
         document.getElementById("editPassword").value = user[4];
         document.getElementById("editRole").value = user[5];
 
-        // Save ID for later update
         document.getElementById("editUserId").value = user[0];
 
         const editModal = new bootstrap.Modal(
@@ -157,7 +155,6 @@ const showUserById = (id) => {
     });
 
   localStorage.setItem("id", id);
-  // localStorage.setItem("password", password)
 };
 //Edit Function
 function updateUser() {
