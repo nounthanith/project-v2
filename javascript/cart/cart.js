@@ -44,7 +44,7 @@ async function addToCart() {
 
     const params = {
       action: "insert",
-      id: generateUniqueId(),
+      id: Math.floor(Math.random() * 100),
       cartProductName: productName,
       cartProductImage: productImage || "no-image.jpg",
       cartProductPrice: productPrice,
@@ -107,9 +107,10 @@ function initializeCartButton() {
 
 initializeCartButton();
 
-function generateUniqueId() {
-  return Date.now().toString(36) + Math.random().toString(36).substr(2, 5);
-}
+// function generateUniqueId() {
+//   // return Date.now().toString(36) + Math.random().toString(36).substr(2, 5);
+//   Math.floor(Math.random() * 100)
+// }
 
 function updateCartCount() {
   const cartCount = document.getElementById("cartCount");

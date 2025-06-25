@@ -202,9 +202,9 @@
                   />
                 </div>
                 <div class="mb-3">
-                  <label for="editEmail" class="form-label">Email</label>
+                  <label for="editEmail" class="form-label">Password</label>
                   <input
-                    type="email"
+                    type="text"
                     class="form-control"
                     id="editPassword"
                     name="text"
@@ -281,7 +281,9 @@
     <!-- Main Product -->
     <div>
       <!-- Add Product Dialog -->
+
       <div class="container">
+        <h1 class="text-center text-decoration-underline">Product List</h1>
         <button
           type="button"
           class="btn btn-primary"
@@ -559,11 +561,52 @@
       </div>
     </div>
 
+    <!-- Main Cart List -->
+     <div>
+      <!-- Cart Table -->
+      <div class="cotainer">
+        <h1 class="text-center text-decoration-underline mb-2">Cart List</h1>
+        <div class="container mt-3">
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#ID</th>
+                  <th>Image</th>
+                  <th>Name Product</th>
+                   
+                  <th>Price</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Date</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="cartTable">
+                <tr class="align-middle">
+                  <td colspan="9" class="text-center py-3">
+                    <div class="text-center">
+                      <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                    </div>
+                    <p>Loading...🙏❤️</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+     </div>
+
     <script src="javascript/navbar/navbar.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="javascript/users/users.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="javascript/products/createProduct.js"></script>
     <script src="javascript/products/getAdminProduct.js"></script>
+    <script src="javascript/cart/cartList.js"></script>
   </body>
 </html>
