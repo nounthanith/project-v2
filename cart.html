@@ -45,10 +45,10 @@
     </nav>
 
     <!-- Cart -->
-    <div class="cart-container">
+    <div style="margin-top: 100px;" class="cart-container">
       <div class="cart-header">
-        <h1 class="cart-title">Your Cart</h1>
-        <span id="item-count">0 items</span>
+        <h1 style="font-family: 'Press Start 2P', cursive;" class="cart-title">Your Cart</h1>
+        <span id="item-count">0 <span style="font-family: 'Press Start 2P', cursive;">items</span></span>
       </div>
 
       <div id="cart-content">
@@ -73,7 +73,7 @@
           <span>Total</span>
           <span id="total">$0.00</span>
         </div>
-        <button class="checkout-btn">Proceed to Checkout</button>
+        <button onclick="checkOut()" class="checkout-btn">Checkout</button>
       </div>
     </div>
 
@@ -82,5 +82,11 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="javascript/cart/cart.js"></script>
     <script src="javascript/cart/getCart.js"></script>
+
+    <script>
+        const checkOut = () => {
+            location.href = "product.html"
+        }
+    </script>
   </body>
 </html>

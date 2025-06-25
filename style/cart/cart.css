@@ -145,9 +145,10 @@ body {
 .cart-summary {
   background: white;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px black;
   padding: 1.5rem;
   margin-top: 2rem;
+  border: solid 1.5px black;
 }
 
 .summary-row {
@@ -164,7 +165,7 @@ body {
 }
 
 .checkout-btn {
-  width: 100%;
+  width: 250px;
   background: #fcefb4;
   color: black;
   border: 1px black solid !important;
