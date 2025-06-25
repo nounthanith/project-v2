@@ -8,13 +8,25 @@
     <!-- Alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
       .form-container {
         width: 100%;
         max-width: 400px;
+        border: 2px solid black !important;
+        box-shadow: 4px 4px black !important;
+        background-color: #ffbe0b !important;
+      }
+
+      .btn{
+        border: 1.5px solid black !important;
+        box-shadow: 2px 2px black ;
+        background-color: #3a86ff !important;
+        color: white;
       }
     </style>
   </head>
-  <body style="background-color: #e9ecef;" class="">
+  <body style="background-color: #3a86ff" class="">
     <div
       class="container min-vh-100 d-flex justify-content-center align-items-center"
     >
@@ -22,7 +34,12 @@
         id="loginForm"
         class="form-container bg-white border border-2 p-4 rounded shadow-sm"
       >
-        <h4 class="mb-3 text-center">Login</h4>
+        <h4
+          style="font-family: 'Press Start 2P', cursive"
+          class="mb-3 text-center"
+        >
+          Login
+        </h4>
         <div class="mb-3">
           <input
             type="email"
@@ -41,8 +58,8 @@
             required
           />
         </div>
-        <button type="submit" class="btn btn-primary w-100 mb-2">Login</button>
-        <p class="text-center mb-0">
+        <button style="font-family: 'Press Start 2P', cursive;" type="submit" class="btn w-100 mb-2 fw-bold">Login</button>
+        <p style="font-family: 'Press Start 2P', cursive; font-size: 14px !important; margin-top: 14px;" class="text-center mb-0">
           Don't have an account?
           <a href="register.html">Register here</a>
         </p>

@@ -35,7 +35,7 @@ async function fetchProduct() {
           ).toFixed(2)}</span></td>
           <td class="text-danger"><span style="background-color: #fff6cc; padding:2px 15px;" class="rounded-pill">${category}</span></td>
           <td style="color: blue;"><span style="background-color: #a2d2ff; padding:2px 15px;" class="rounded-pill">${stockQty}</span></td>
-          <td class="text-dark"><span style="background-color: #d8f3dc; padding:2px 15px;" class="rounded-pill">${rating}⭐</span></td>
+          <td style="white-space: nowrap; flex-wrap : nowrap;" class="text-dark"><span style="background-color: #d8f3dc; padding:2px 15px;" class="rounded-pill">${rating}<span class="text-warning">★</span></span></td>
           <td>${new Date(createdAt).toLocaleDateString()}</td>
           <td style="white-space: nowrap; flex-wrap: nowrap;" class="">
             <button onclick="deleteProduct(${id})" class="btn btn-sm btn-danger">Delete</button>
