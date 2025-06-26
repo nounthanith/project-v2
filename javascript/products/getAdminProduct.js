@@ -124,6 +124,17 @@ function EditProduct() {
   // console.log("editName",editName)
   // console.log("editImage", editImage)
 
+  const now = new Date();
+  const created_at = now.toLocaleString("en-US", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+  });
+
   var params = {
     action: "update",
     id: id,
@@ -134,6 +145,7 @@ function EditProduct() {
     description: editDescription,
     stock_Qty: editStock_Qty,
     rating: editRating,
+    created_at: created_at,
   };
 
   fetch(searchUrl + "?" + new URLSearchParams(params), { method: "POST" })
