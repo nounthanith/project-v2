@@ -2,6 +2,7 @@ const myTeam = [
   {
     name: "Ny Chenda",
     github: "https://github.com/",
+    role: "Leader"
   },
   {
     image: "./images/TeamImages/Me.jpg",
