@@ -1,22 +1,27 @@
 const myTeam = [
   {
     name: "Ny Chenda",
-    github: "https://github.com/",
-    role: "Leader"
+    role: "Leader",
+    github: "",
+    portfolio: "",
   },
   {
-    image: "./images/TeamImages/Me.jpg",
     name: "Nuon Thanith",
-    github: "https://github.com/nounthanith",
-    // bio: "Passionate about creating efficient and user-friendly applications.",
+    // image: "./images/TeamImages/Me.jpg",
+    github: "<a target='_blank' href='https://github.com/nounthanith'><i class='fa-brands fa-github'></i></a>",
+    portfolio: "<a target='_blank' href='https://modern-portfolio-pi-two.vercel.app/'><i class='fa-solid fa-circle-user'></i></i></a>",
+    // role:"Frontend"
   },
   {
     name: "Ngin Vinnet",
-    github: "https://github.com/",  
+    github: "",
+    portfolio: "",
+
   },
   {
     name: "Khoeurn Sothea", 
-    github: "https://github.com/",
+    github: "",
+    portfolio: "",
   },
 ];
 
@@ -37,8 +42,9 @@ const aboutMyTeam = () => {
                         <h3 style="font-size: 15px;" class="member-name">${item.name}</h3>
                         <p class="member-role">${item.role || "Team Member"}</p>
                         <p class="member-bio">${item.bio || ""}</p>
-                        <div class="social-links">
-                            <a href="${item.github}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <div class="social-links" style="display: flex;gap: 5px;>
+                          <p class="social-links" >${item.github ? item.github : ""}</p>
+                          <p class="social-links">${item.portfolio}</p>
                         </div>
                     </div>
                 `;
