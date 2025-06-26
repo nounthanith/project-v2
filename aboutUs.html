@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Details</title>
-    <link rel="stylesheet" href="style/product/detail.css" />
+    <title>About Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style/aboutUs/aboutUs.css" />
     <link rel="stylesheet" href="style/navbar.css" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="style/footer/footer.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -41,61 +47,14 @@
       </div>
     </nav>
 
-    <!-- detail -->
-    <div style="margin-top: 100px" class="container container-detail">
-      <h1
-        style="font-family: 'Press Start 2P', cursive; font-size: 22px;"
-        class="text-center mb-5 text-decoration-underline"
-      >
-        Product Detail.
-      </h1>
-      <div class="product-detail">
-        <div class="product-image">
-          <img id="detailImage" src="" alt="Product Image" />
-        </div>
-        <div class="product-info">
-          <div class="product-category" id="detailCategory"></div>
-          <h1 class="product-title" id="detailName"></h1>
-          <div
-            style="font-family: 'Press Start 2P', cursive"
-            class="product-price"
-            id="detailPrice"
-          ></div>
-          <div class="product-rating">
-            <div class="stars" id="detailRating"></div>
-          </div>
-          <p class="product-description" id="detailDescription"></p>
-          <div class="action-buttons">
-            <button
-              onclick="addToCart()"
-              id="addToCartBtn"
-              style="
-                padding: 5px 18px !important;
-                border: 1.5px black solid;
-                box-shadow: 3px 3px black;
-                font-family: 'Press Start 2P', cursive !important;
-              "
-              class="btn btn-secondary"
-            >
-              <i class="fas fa-cart-plus"></i> Add to Cart
-            </button>
-            <span id="cartCount" class="cart-count" style="display: none"
-              >0</span
-            >
+    <!-- Main -->
+    <div style="margin-top: 100px" class="container-team container ">
+      <header>
+        <h1>Meet Our Team</h1>
+        <p class="subtitle"></p>
+      </header>
 
-            <!-- <button
-              style="
-                padding: 5px 18px !important;
-                border: 1.5px black solid;
-                box-shadow: 3px 3px black;
-              "
-              class="btn btn-secondary"
-            >
-              Buy Now
-            </button> -->
-          </div>
-        </div>
-      </div>
+      <div class="team-container" id="showMyTeam"></div>
     </div>
 
     <!-- Footer -->
@@ -170,12 +129,10 @@
         </div>
       </div>
     </footer>
-
-    <script src="javascript/products/productDetail.js"></script>
+    <script src="javascript/about/aboutUs.js"></script>
+    <script src="javascript/navbar/footer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="javascript/navbar/navbar.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="javascript/navbar/footer.js"></script>
-    <script src="javascript/cart/cart.js"></script>
   </body>
 </html>

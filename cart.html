@@ -45,14 +45,26 @@
     </nav>
 
     <!-- Cart -->
-    <div style="margin-top: 130px;" class="cart-container">
+    <div style="margin-top: 130px" class="cart-container">
       <div class="cart-header">
-        <h1 style="font-family: 'Press Start 2P', cursive;" class="cart-title">Your Cart</h1>
-        <span id="item-count">0 <span style="font-family: 'Press Start 2P', cursive;">items</span></span>
+        <h1 style="font-family: 'Press Start 2P', cursive" class="cart-title">
+          Your Cart
+        </h1>
+        <span id="item-count"
+          >0
+          <span style="font-family: 'Press Start 2P', cursive"
+            >items</span
+          ></span
+        >
       </div>
 
       <div id="cart-content">
-        <!-- Cart items -->
+        <div class="text-center">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+        <p class="text-center">Wait...🙏❤️</p>
         <div class="empty-cart">
           <i class="fas fa-shopping-cart"></i>
           <h2>Your cart is empty</h2>
@@ -73,7 +85,13 @@
           <span>Total</span>
           <span id="total">$0.00</span>
         </div>
-        <button style="font-family: 'Press Start 2P', cursive;" onclick="checkOut()" class="checkout-btn">Checkout</button>
+        <button
+          style="font-family: 'Press Start 2P', cursive"
+          onclick="checkOut()"
+          class="checkout-btn"
+        >
+          Checkout
+        </button>
       </div>
     </div>
 
@@ -84,9 +102,9 @@
     <script src="javascript/cart/getCart.js"></script>
 
     <script>
-        const checkOut = () => {
-            location.href = "product.html"
-        }
+      const checkOut = () => {
+        location.href = "product.html";
+      };
     </script>
   </body>
 </html>

@@ -67,9 +67,7 @@ function renderCart(items) {
 
     html += `
             <div class="cart-item" data-id="${item.id}">
-                <img src="${item.cartProductImage}" alt="${
-      item.cartProductName
-    }" class="item-image">
+                <img src="${item.cartProductImage}" alt="${item.cartProductName}" class="item-image">
                 <div class="item-details">
                     <h3 class="item-name">${item.cartProductName}</h3>
                     <p class="item-description">${item.cartDescription}</p>
