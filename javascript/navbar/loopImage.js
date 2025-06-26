@@ -2,9 +2,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const slider = document.querySelector('.slider-images');
   
   const images = [
-    'https://global-static.popmart.com/globalAdmin/1750043256667____kv_3000x1250____.jpg?x-oss-process=image/format,webp',
-    'https://global-static.popmart.com/globalAdmin/1730381557068____1440x600____.jpg?x-oss-process=image/format,webp',
-    'https://global-static.popmart.com/globalAdmin/1750646125453____kv_3000x1250_pc_skullpanda-the-paradox-series-figures_blind-boxes-_popmart-us____.jpg?x-oss-process=image/format,webp',
+    './images/image1.webp',
+    './images/image2.webp',
+    './images/image3.webp',
+    './images/image4.webp',
     // 'https://global-static.popmart.com/globalAdmin/1749449415978____kv_3000x1250____.jpg?x-oss-process=image/format,webp'
   ];
   
