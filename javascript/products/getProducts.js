@@ -1,6 +1,7 @@
 const productUrl = "https://script.google.com/macros/s/AKfycbzVaSAa2IrOeRTgRsQN2CzvFbbRyO3nZPj-KMG2tiYlHrd0_EkYf-W6fRdAnoJfkA/exec";
 let allProducts = [];
 
+
 function formatDate(dateString) {
   const date = new Date(dateString);
   return date
@@ -24,6 +25,8 @@ async function fetchProduct() {
     }
 
     allProducts = data.data;
+    // console.log(allProducts)
+
     renderProducts(allProducts);
     createCategoryButtons(allProducts);
   } catch (error) {
@@ -45,6 +48,7 @@ function renderProducts(products) {
     return;
   }
 
+ 
   products.forEach((product) => {
     const [
       id,
@@ -128,5 +132,6 @@ function showError() {
     </div>
   `;
 }
+
 
 document.addEventListener('DOMContentLoaded', fetchProduct);

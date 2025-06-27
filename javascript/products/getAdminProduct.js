@@ -5,6 +5,12 @@ async function fetchProduct() {
     // console.log(data);
     const products = data.data;
     const productTable = document.getElementById("productTable");
+    
+    let productCount = document.getElementById("productCount")
+    productCount.innerHTML = products.length;
+    // console.log(productCount)
+
+
 
     if (data.status !== "success") {
       throw new Error("Failed to fetch products");

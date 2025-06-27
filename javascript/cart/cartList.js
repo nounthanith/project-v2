@@ -7,9 +7,17 @@ async function cartList() {
             .then((data) => {
                 const items = data.data;
                 const tableBody = document.getElementById('cartTable');
+                let cartCount = document.getElementById('cartCount')
+                let incomeCount = document.getElementById('incomeCount');
+
+                cartCount.innerHTML = items.length;
+                const totalIncome = items.reduce((sum, item) => {
+                    return sum + Number(item.cartProductPrice);
+                }, 0);
+                incomeCount.innerHTML = "$" + (totalIncome.toFixed(2))
+                                
                 
                 tableBody.innerHTML = '';
-                // console.log(items)
                 items.forEach(item => {
                     const row = document.createElement('tr');
                     row.className = 'align-middle';

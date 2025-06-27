@@ -6,6 +6,7 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style/navbar.css" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/product/dashboard.css">
     <!-- Icon -->
     <link
       rel="stylesheet"
@@ -48,9 +49,55 @@
         </div>
       </div>
     </nav>
-    <!-- Main User -->
-    <div>
-      <div style="margin-top: 150px" class="container">
+
+    
+    <div style="margin-top: 150px" class="container">
+      <!-- Dashboard -->
+      <div class="dashboard-container">
+        <div class="dashboard-card">
+          <div class="dashboard-icon" style="background-color: #4e73df;">
+            <i class="fas fa-box"></i>
+          </div>
+          <div class="dashboard-content">
+            <p class="dashboard-label">Products</p>
+            <p id="productCount" class="dashboard-value">0</p>
+          </div>
+        </div>
+
+        <div class="dashboard-card">
+          <div class="dashboard-icon" style="background-color: #1cc88a;">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="dashboard-content">
+            <p class="dashboard-label">Users</p>
+            <p id="userCount" class="dashboard-value">0</p>
+          </div>
+        </div>
+
+        <div class="dashboard-card">
+          <div class="dashboard-icon" style="background-color: #f6c23e;">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div class="dashboard-content">
+            <p class="dashboard-label">Cart Items</p>
+            <p id="cartCount" class="dashboard-value">0</p>
+          </div>
+        </div>
+
+        <div class="dashboard-card">
+          <div class="dashboard-icon" style="background-color: #e74a3b;">
+            <i class="fas fa-dollar-sign"></i>
+          </div>
+          <div class="dashboard-content">
+            <p class="dashboard-label">Total Income</p>
+            <p id="incomeCount" class="dashboard-value">$0.00</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Main User -->  
+      <div>
         <h1 class="text-center text-decoration-underline mt-3 mb-4">
           User List
         </h1>

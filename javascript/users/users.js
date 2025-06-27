@@ -1,6 +1,8 @@
 const urlUsers =
   "https://script.google.com/macros/s/AKfycbwUEl3DI0SczSF3YONRhF6ujWJPrk8kwGGphZ8ZrcUZtaCkiFLErhR1b8CmDMW2orZBZA/exec";
 const userData = document.getElementById("userData");
+let userCount = document.getElementById("userCount");
+
 async function fetchUsers() {
   const role = localStorage.getItem("userRole");
   if (role == "user") {
@@ -13,6 +15,9 @@ async function fetchUsers() {
     const result = await response.json();
     const users = result.data;
     // console.log(users);
+    userCount.innerHTML = users.length
+
+
     userData.innerHTML = "";
 
     for (let i = 0; i < users.length; i++) {
