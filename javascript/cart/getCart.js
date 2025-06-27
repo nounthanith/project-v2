@@ -127,21 +127,6 @@ function renderStars(rating) {
   return stars;
 }
 
-async function updateQuantity(itemId, change, newValue) {
-  try {
-    const quantity = 1;
-  } catch (error) {
-    console.error("Error:", error);
-    Swal.fire({
-      position: "top-center",
-      icon: "error",
-      title: "Error",
-      text: error.message,
-      showConfirmButton: true,
-    });
-  }
-}
-
 async function removeItem(itemId) {
   try {
     const result = await Swal.fire({
