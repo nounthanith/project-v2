@@ -9,13 +9,14 @@ async function cartList() {
                 const tableBody = document.getElementById('cartTable');
                 let cartCount = document.getElementById('cartCount')
                 let incomeCount = document.getElementById('incomeCount');
+                let totalcount = document.getElementById("totalIncome")
 
                 cartCount.innerHTML = items.length;
                 const totalIncome = items.reduce((sum, item) => {
                     return sum + Number(item.cartProductPrice);
                 }, 0);
                 incomeCount.innerHTML = "$" + (totalIncome.toFixed(2))
-                                
+                totalcount.innerHTML = totalIncome.toFixed(2) + "$"                  
                 
                 tableBody.innerHTML = '';
                 items.forEach(item => {
