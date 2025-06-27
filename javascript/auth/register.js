@@ -6,12 +6,15 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
+    const submitButton = event.target.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
+    submitButton.textContent = "Processing...";
+
     const name = document.getElementById("name").value;
     const phone = document.getElementById("phone").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    // Date like "01/01/2023, 12:00:00"
     const now = new Date();
     const created_at = now.toLocaleString("en-US", {
       day: "2-digit",
@@ -34,13 +37,9 @@ document
       created_at: created_at,
     };
 
-    // console.log(params.created_at);
-    // console.log(name, phone, email, password);
-
     fetch(url + "?" + new URLSearchParams(params), { method: "POST" })
       .then((res) => res.json())
       .then((data) => {
-        // console.log(data)
         if (data.status === "success") {
           Swal.fire({
             position: "top-center",
@@ -49,11 +48,11 @@ document
             showConfirmButton: false,
             timer: 2000,
           });
-          // Redirect to login page after 3.5 seconds
+
           setTimeout(() => {
             location.href = "index.html";
           }, 3500);
-        }else {
+        } else {
           Swal.fire({
             position: "top-center",
             icon: "error",
@@ -61,7 +60,21 @@ document
             text: data.message,
             showConfirmButton: true,
           });
+
+          submitButton.disabled = false;
+          submitButton.textContent = "Register";
         }
         document.getElementById("userForm").reset();
+      })
+      .catch((error) => {
+        Swal.fire({
+          position: "top-center",
+          icon: "error",
+          title: "Network Error",
+          text: "Please try again later",
+          showConfirmButton: true,
+        });
+        submitButton.disabled = false;
+        submitButton.textContent = "Register";
       });
   });
