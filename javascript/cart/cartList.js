@@ -9,7 +9,7 @@ async function cartList() {
                 const tableBody = document.getElementById('cartTable');
                 
                 tableBody.innerHTML = '';
-                console.log(items)
+                // console.log(items)
                 items.forEach(item => {
                     const row = document.createElement('tr');
                     row.className = 'align-middle';
