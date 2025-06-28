@@ -40,7 +40,7 @@ document
           localStorage.setItem("userEmail", userEmail);
           localStorage.setItem("userPhone", data.data[i][2]);
 
-          // Show success message
+        
           await Swal.fire({
             position: "top-center",
             icon: "success",

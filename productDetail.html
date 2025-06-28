@@ -44,7 +44,7 @@
     <!-- detail -->
     <div style="margin-top: 100px" class="container container-detail">
       <h1
-        style="font-family: 'Press Start 2P', cursive; font-size: 22px;"
+        style="font-family: 'Press Start 2P', cursive; font-size: 22px"
         class="text-center mb-5 text-decoration-underline"
       >
         Product Detail.
@@ -83,16 +83,19 @@
               >0</span
             >
 
-            <!-- <button
+            <button
+              onclick="back()"
               style="
+                background-color: #219ebc !important;
                 padding: 5px 18px !important;
                 border: 1.5px black solid;
                 box-shadow: 3px 3px black;
+                font-family: 'Press Start 2P', cursive !important;
               "
               class="btn btn-secondary"
             >
-              Buy Now
-            </button> -->
+              Back
+            </button>
           </div>
         </div>
       </div>
@@ -177,5 +180,10 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="javascript/navbar/footer.js"></script>
     <script src="javascript/cart/cart.js"></script>
+    <script>
+      const back = () => {
+        window.location.href = "product.html";
+      };
+    </script>
   </body>
 </html>
